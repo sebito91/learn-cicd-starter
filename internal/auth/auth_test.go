@@ -27,7 +27,7 @@ func TestGetAPIKeyWithBadAuthorizationMarker(t *testing.T) {
 
 func TestGetAPIKeyWithValidAPIKey(t *testing.T) {
 	header := http.Header{}
-	header.Add("Authorization", "APIKey 12345")
+	header.Add("Authorization", "ApiKey 12345")
 
 	key, err := GetAPIKey(header)
 	if err != nil {
