@@ -21,7 +21,7 @@ jobs:
       - name: build production artifact
         run: ./scripts/buildprod.sh
 
-      - id: 'auth for GCP docker deploy'
+      - id: 'auth_gcp'
         uses: 'google-github-actions/auth@v2'
         with:
           credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
